@@ -1,0 +1,60 @@
+.navbar,
+.scroll {
+    transition: .5s;
+}
+
+/* CELL */
+@media (max-width: 768px) {
+    .navbar {
+        padding-left: 0.25rem;
+        padding-right: 0.5rem;
+    }
+}
+
+/* PC */
+@media (min-width: 768px) {
+    .navbar {
+        padding-left: 4rem;
+        padding-right: 2.5rem;
+    }
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.390);
+}
+
+.scroll {
+    background: #efefef;
+}
+
+.navbar .nav-link,
+.navbar .nav-link:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.scroll .nav-link,
+.scroll .nav-link:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.navbar .active {
+    color: orangered !important;
+}
+
+.scroll .active {
+    color: #0b5ed7 !important;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.navbar-brand:focus {
+    animation: bounce 1s;
+}

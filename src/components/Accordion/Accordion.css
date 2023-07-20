@@ -1,0 +1,66 @@
+.accordion-button::after {
+    display: none;
+}
+
+.accordion-button::before {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+    content: "";
+    background-image: var(--bs-accordion-btn-icon);
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transform: rotate(-90deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::before {
+    transform: rotate(-180deg);
+}
+
+.accordion-item {
+    border: 0 !important;
+}
+
+.accordion-button {
+    border-radius: 15px !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accordion-button:hover {
+    background-color: #efefef !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #efefef !important;
+}
+
+.text-color-icon {
+    font-family: var(--font-family);
+    color: black;
+    font-style: normal;
+}
+
+.bi-tools {
+    color: tomato;
+}
+
+.bi-pc-display-horizontal {
+    color: slateblue;
+}
+
+.bi-server {
+    color: lightseagreen;
+}
+
+.bi-hdd-rack-fill {
+    color: peru;
+}
+
+.bi-windows {
+    color: dodgerblue;
+}
